@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .custom-nav {
+
+    width: 100%;
+    background-color: #232F3E;
+    padding: 20px 20px 20px 20px;
+  }
+  
+  .custom-nav > .custom-nav-header {
+    display: inline;
+  }
+  
+  .custom-nav > .custom-nav-header > .custom-nav-log {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  .custom-nav > .custom-nav-header > .custom-nav-log img{
+    position: relative;
+    top: -8px;
+    left: 15%;
+  }
+  
+  .custom-nav > .custom-nav-btn {
+    display: none;
+  
+  }
+  .custom-nav > .custom-nav-btn > label{
+    cursor: pointer;
+  }
+  .custom-nav > .header-right >.nav-links {
+    display: inline;
+    /* float: right; */
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+  
+  .custom-nav > .header-right > .nav-links  > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .custom-nav > .nav-links .header-right > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .custom-nav > #nav-check {
+    display: none;
+  }
+  .custom-nav .custom-searchbox{
+    display: inline-flex;
+    align-items: inherit;
+}
+
+
+  .custom-nav .custom-searchbox select{
+    padding: 10px 20px 10px 20px;
+    background: #ececec;
+    border: none;
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px;
+
+  }
+
+  
+
+  .custom-nav .custom-searchbox select {
+    background-color: #ececec;
+    border: none;
+    /* border-radius: 4px; */
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    font-weight: 600;
+
+    background-image:
+    linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%),
+    radial-gradient(#e62b64 70%, transparent 72%);
+  background-position:calc(100% - 15px) calc(1em + 3px),
+  calc(100% - 10px) calc(1em + 3px),
+  calc(100% - .5em) 0.8em;
+  background-size:5px 5px,
+  5px 5px,
+  15px 15px;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+  .custom-nav .custom-searchbox input[type="text"]{
+    border: none;
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+  }
+  .custom-nav .custom-searchbox button{
+    padding: 0;
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+  }
+  .custom-nav .custom-searchbox select:focus, .custom-nav .custom-searchbox input[type="text"]:focus{
+    outline: none;
+    }
+    .custom-nav  .header-right
+    {
+        float: right;
+        margin-top: 17px;
+        
+    }
+    @media only screen and (max-width: 667px) {
+      .custom-nav > .custom-nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+      .custom-nav > .custom-nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+      .custom-nav > .custom-nav-btn > label:hover,.nav  #nav-check:checked ~ .custom-nav-btn > label {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .custom-nav > .custom-nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+      }
+      .custom-nav > .header-right > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+      }
+      .custom-nav > .header-right > .nav-links > a {
+        display: block;
+        width: 100%;
+      }
+      .custom-nav > #nav-check:not(:checked) ~ .header-right > .nav-links {
+        height: 0px;
+      }
+      .custom-nav > #nav-check:checked ~ .header-right > .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: hidden;
+      }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  /* body {
+    background-color: lightblue;
+  } */
+  .custom-nav .custom-searchbox{
+    width: 384px;
+  }
+}
+/* small */
+@media only screen and (min-width: 1212px) {
+
+  /* body {
+    background-color: rgb(42, 134, 165);
+  } */
+  .custom-nav .custom-searchbox{
+    width: 527px;
+  }
+}
+@media only screen and (max-width: 1070px) {
+
+  /* body {
+    background-color: rgb(4, 80, 44);
+  } */
+  .custom-nav > .custom-nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 33px;
+  }
+  .custom-nav > .custom-nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .custom-nav > .custom-nav-btn > label:hover,.nav  #nav-check:checked ~ .custom-nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .custom-nav > .custom-nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .custom-nav > .header-right > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+    top: 115px;
+    left: 0px;
+  }
+  .custom-nav > .header-right > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .custom-nav > #nav-check:not(:checked) ~ .header-right > .nav-links {
+    height: 0px;
+  }
+  .custom-nav > #nav-check:checked ~ .header-right > .nav-links {
+    height: calc(21vh - 50px);
+    overflow-y: auto;
+  }
+  .custom-nav .custom-searchbox{
+    width: 484px;
+    position: relative;
+    left: -20%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  /* body {
+    background-color: rgb(153, 184, 153);
+  }  */
+  .custom-nav .custom-searchbox{
+    width: 383px;
+ 
+  }
+}
+
+@media only screen and (max-width: 780px) {
+
+  /* body {
+    background-color: rgb(27, 42, 122);
+  }  */
+  .custom-nav > .custom-nav-header > .custom-nav-log img{
+    width: 80%;
+  }
+  .custom-nav{
+    height: 162px;
+  }
+  .custom-nav .header-right{
+    float: none;
+    margin-top: 0;
+  }
+  .custom-nav .custom-searchbox{
+    width: 89%;
+    position: relative;
+    left: 42px;
+
+  }
+  .custom-nav > #nav-check:checked ~ .header-right > .nav-links{
+    top: 160px;
+    overflow-y: hidden;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1641px) {
+  /* body {
+    background-color: green;
+  } */
+  .custom-nav .custom-searchbox{
+    width: 950px;
+  }
+}
+
+
+
+
