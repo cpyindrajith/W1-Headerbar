@@ -29,7 +29,9 @@
     top: -8px;
     left: 15%;
   }
-  
+  .custom-nav > .custom-nav-header > .custom-nav-log .logo-large{
+    display: none;
+  }
   .custom-nav > .custom-nav-btn {
     display: none;
   
@@ -49,11 +51,12 @@
   
   .custom-nav > .header-right > .nav-links  > a {
     display: inline-block;
-    padding: 13px 10px 13px 10px;
+    padding: 26px 10px 13px 10px;
     text-decoration: none;
     color: white;
     font-size: 14px;
     font-weight: 500;
+
   }
   
   .custom-nav > .nav-links .header-right > a:hover {
@@ -69,21 +72,10 @@
 }
 
 
-  .custom-nav .custom-searchbox select{
-    padding: 10px 20px 10px 20px;
-    background: #ececec;
-    border: none;
-    border-top-left-radius:8px;
-    border-bottom-left-radius:8px;
-
-  }
-
-  
-
-  .custom-nav .custom-searchbox select {
+  .custom-nav .custom-searchbox select { 
+    font-size: 18px;
     background-color: #ececec;
     border: none;
-    /* border-radius: 4px; */
     display: inline-block;
     font: inherit;
     line-height: 1.5em;
@@ -106,6 +98,12 @@
   5px 5px,
   15px 15px;
   background-repeat: no-repeat;
+
+  padding: 10px 20px 10px 20px;
+  background: #ececec;
+  border: none;
+  border-top-left-radius:8px;
+  border-bottom-left-radius:8px;
 }
 
 
@@ -117,6 +115,9 @@
     border: none;
     padding: 10px 20px 10px 20px;
     width: 100%;
+    
+    font-size: 18px;
+
   }
   .custom-nav .custom-searchbox button{
     padding: 0;
@@ -124,6 +125,7 @@
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     cursor: pointer;
+    background: #fedf5d;
   }
   .custom-nav .custom-searchbox select:focus, .custom-nav .custom-searchbox input[type="text"]:focus{
     outline: none;
@@ -143,8 +145,7 @@
       }
       .custom-nav > .custom-nav-btn > label {
         display: inline-block;
-        width: 50px;
-        height: 50px;
+
         padding: 13px;
       }
       .custom-nav > .custom-nav-btn > label:hover,.nav  #nav-check:checked ~ .custom-nav-btn > label {
@@ -182,8 +183,8 @@
 
     /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
-  /* body {
+/* 
+  body {
     background-color: lightblue;
   } */
   .custom-nav .custom-searchbox{
@@ -200,31 +201,48 @@
     width: 527px;
   }
 }
+/* Mobile */
 @media only screen and (max-width: 1070px) {
 
   /* body {
     background-color: rgb(4, 80, 44);
   } */
+  .custom-nav{
+    padding: 20px 20px 63px 20px;
+  }
+  .custom-nav .custom-searchbox select,.custom-nav .custom-searchbox input[type="text"]{
+    font-size: 45px;
+  }
+  .custom-nav .custom-searchbox input[type="text"]{
+    width: 63%;
+  }
+  .custom-nav .custom-searchbox button{
+    width: 11%;
+  }
+  .custom-nav .header-right{
+    float: none;
+    margin-top: 0;
+  }
   .custom-nav > .custom-nav-btn {
     display: inline-block;
     position: absolute;
-    right: 30px;
-    top: 33px;
+    right: 75px;
+    top: 54px;
   }
   .custom-nav > .custom-nav-btn > label {
     display: inline-block;
-    width: 50px;
-    height: 50px;
     padding: 13px;
+    position: relative;
+    left: 38px;
   }
   .custom-nav > .custom-nav-btn > label:hover,.nav  #nav-check:checked ~ .custom-nav-btn > label {
     background-color: rgba(0, 0, 0, 0.3);
   }
   .custom-nav > .custom-nav-btn > label > span {
     display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
+    width: 62px;
+    height: 24px;
+    border-top: 10px solid #eee;
   }
   .custom-nav > .header-right > .nav-links {
     position: absolute;
@@ -234,12 +252,13 @@
     height: 0px;
     transition: all 0.3s ease-in;
     overflow: hidden;
-    top: 115px;
+    top: 313px;
     left: 0px;
   }
   .custom-nav > .header-right > .nav-links > a {
     display: block;
     width: 100%;
+    font-size: 40px;
   }
   .custom-nav > #nav-check:not(:checked) ~ .header-right > .nav-links {
     height: 0px;
@@ -249,9 +268,14 @@
     overflow-y: auto;
   }
   .custom-nav .custom-searchbox{
-    width: 484px;
-    position: relative;
-    left: -20%;
+    width: 92%;
+    margin-left: 48px;
+  }
+  .custom-nav > .custom-nav-header > .custom-nav-log img{
+    width: 460px;
+  }
+  .custom-nav > .header-right > .nav-links  > a{
+    border-bottom: 1px solid #777777;
   }
 }
 
